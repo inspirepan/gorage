@@ -6,8 +6,6 @@
 
 package leetcode
 
-import "fmt"
-
 // @lc code=start
 func twoSum(nums []int, target int) []int {
 	rec := map[int]int{}
@@ -17,7 +15,6 @@ func twoSum(nums []int, target int) []int {
 		}
 		rec[target-nums[i]] = i
 	}
-	fmt.Println(rec)
 	return []int{0, 0}
 }
 
